@@ -115,7 +115,7 @@ margin: 15px;
     button{
         margin: 2px;
         border: none;
-        padding: 2px 8px;
+        padding: 5px 8px;
         background: #fca652;
         outline: none;
         font-family: 'Turret Road', cursive;
@@ -136,7 +136,7 @@ margin: 15px;
     button{
         margin: 1px;
         border: none;
-        padding: 2px 5px;
+        padding: 5px 5px;
         background: #ffd57e;
         outline: none;
         font-family: 'Turret Road', cursive;
