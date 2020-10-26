@@ -3,42 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
+    <title>Rock paper Scissors</title>
 </head>
-<link rel="stylesheet" href="Style.css">
+<link rel="stylesheet" href="Main.css">
 <body>
-    <section class="game">
-        <div class="Score">
-            <div class="PlayerScore">
-                <p>Playerscore</p>
-                <p id="Pscore">0</p>
-            </div>
-            <div class="ComputerScore">
-                <p>Computerscore</p>
-                <p id="Cscore">0</p>
-            </div>
-        </div>
-        <div class="header">
-            <h1 class="Winner">
-                <!-- computer wins -->
-            </h1>
-        </div>
-<div class="Game">
-    <div class="PlayerHand"><img class="Phand" src="./Assets/rock.png" alt=""></div>
-    <div class="ComputerHand"><img class="Chand" src="./Assets/rock.png" alt=""></div>
-</div>
-<div class="Btn">
-    <button onclick='pHands("rock")'>rock</button>
-    <button onclick='pHands("paper")'>paper</button>
-    <button onclick='pHands("scissors")'>scissors</button>
-</div>
-<div class="popup">
-        <h1 class="Message">YOU WIN</h1>
-            <div class="Exit" onclick="location.href='Main.html'">Exit</div>
-            <div class="Restart" onclick="location.href='Index.html'">Restart</div>
+
+    <div class='container'>
+        <h1 class="main">Rock paper scissors</h1>
+        <button class="play" onclick="location.href='Main.html'">PLAY</button>
+        <button class="how-to-play" onclick="location.href='https://www.wikihow.com/Play-Rock,-Paper,-Scissors'">HOW TO PLAY</button>
     </div>
-</div>
-    </section>
-    <script src="Script.js"></script>
-</body> 
+   <div id="Dev">
+<pre>
+    #Developed By
+    #Mohamed Nizam
+    #Mohamed shibin
+</pre>
+   </div>
+    <script src="Main.js"></script>
+</body>
 </html>
