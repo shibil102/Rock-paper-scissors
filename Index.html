@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+</head>
+<link rel="stylesheet" href="Style.css">
+<body>
+    <section class="game">
+        <div class="Score">
+            <div class="PlayerScore">
+                <p>Playerscore</p>
+                <p id="Pscore">0</p>
+            </div>
+            <div class="ComputerScore">
+                <p>Computerscore</p>
+                <p id="Cscore">0</p>
+            </div>
+        </div>
+        <div class="header">
+            <h1 class="Winner">
+                <!-- computer wins -->
+            </h1>
+        </div>
+<div class="Game">
+    <div class="PlayerHand"><img class="Phand" src="./Assets/rock.png" alt=""></div>
+    <div class="ComputerHand"><img class="Chand" src="./Assets/rock.png" alt=""></div>
+</div>
+<div class="Btn">
+    <button onclick='pHands("rock")'>rock</button>
+    <button onclick='pHands("paper")'>paper</button>
+    <button onclick='pHands("scissors")'>scissors</button>
+</div>
+<div class="popup">
+        <h1 class="Message">YOU WIN</h1>
+            <div class="Exit" onclick="location.href='Main.html'">Exit</div>
+            <div class="Restart" onclick="location.href='Index.html'">Restart</div>
+    </div>
+</div>
+    </section>
+    <script src="Script.js"></script>
+</body> 
+</html>
