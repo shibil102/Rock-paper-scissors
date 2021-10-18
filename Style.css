@@ -1,149 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@800&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Turret+Road:wght@800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: #f33535;
+body {
+  background-color: #f33535;
 }
-.Score{
+.Score {
+  display: flex;
+  justify-content: space-around;
+  margin: 25px;
+  font-family: "Turret Road", cursive;
+  text-align: center;
+}
+p {
+  margin: 10px;
+}
+.header {
+  text-align: center;
+  font-family: "Turret Road", cursive;
+}
+.Winner {
+  margin: 25px;
+}
+.headers {
+  color: #eeeeee;
+  font-weight: 800;
+  font-size: xx-large;
+}
+.Game {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px;
+}
+.PlayerHand {
+  transform: rotateY(180deg);
+}
+.Btn {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  margin: 50px;
+  border: none;
+  padding: 10px 25px;
+  background: #ffd57e;
+  outline: none;
+  font-family: "Turret Road", cursive;
+}
+button:hover {
+  color: #212121;
+  background: #fca652;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.popup {
+  width: 472px;
+  height: 190px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  display: none;
+}
+.Message {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  font-family: "Turret Road", cursive;
+}
+.finalS {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  font-family: "Turret Road", cursive;
+}
+.Exit,
+.Restart {
+  width: 86px;
+  height: 40px;
+  background: #ffd57e;
+  font-family: "Turret Road", cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+.Exit:hover,
+.Restart:hover {
+  cursor: pointer;
+  background: #fca652;
+  transition: all 0.3s ease;
+  color: #212121;
+}
+@media (max-width: 500px) {
+  .Score {
     display: flex;
     justify-content: space-around;
     margin: 25px;
-    font-family: 'Turret Road', cursive;
+    font-family: "Turret Road", cursive;
     text-align: center;
-}
-p{
-    margin: 10px;
-}
-.header{
-    text-align: center;
-    font-family: 'Turret Road', cursive;
-}
-.Winner{
-    margin: 25px;
-}
-.headers{
-    color: #eeeeee;
-    font-weight: 800;
-    font-size: xx-large;
-}
-.Game{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 40px;
-}
-.PlayerHand{
-    transform: rotateY(180deg);
-}
-.Btn{
-position: absolute;
-left: 50%;
-transform: translate(-50%,-50%);
-}
-button{
-    margin: 50px;
+  }
+  button:hover {
+    color: #212121;
+    background: #fca652;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  button {
+    margin: 15px;
     border: none;
-    padding: 10px 25px;
+    padding: 10px 15px;
+    background: #fca652;
+    outline: none;
+    font-family: "Turret Road", cursive;
+  }
+  .Btn {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .Phand {
+    width: 150px;
+  }
+  .Chand {
+    width: 150px;
+  }
+}
+@media (max-width: 366px) {
+  button {
+    margin: 1px;
+    border: none;
+    padding: 5px 5px;
     background: #ffd57e;
     outline: none;
-    font-family: 'Turret Road', cursive;
+    font-family: "Turret Road", cursive;
+  }
 }
-button:hover{
-    color: #212121;
-    background: #fca652;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-.popup{
-    width: 472px;
-    height: 190px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    display: none;
-}
-.Message{
-    position: absolute;
-    left: 50%;
-    top: 30%;
-    transform: translate(-50%,-50%);
-    font-family: 'Turret Road', cursive;
-}
-.finalS{
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    transform: translate(-50%,-50%);
-    font-family: 'Turret Road', cursive;
-}
-.Exit,.Restart{
-width: 86px;
-height: 40px;
-background: #ffd57e;
-font-family: 'Turret Road', cursive;
-display: flex;
-align-items: center;
-justify-content: center;
-margin: 15px;
-}
-.Exit:hover,.Restart:hover{
-    cursor: pointer;
-    background: #fca652;
-    transition: all 0.3s ease;
-    color: #212121;
-}
-@media(max-width: 500px){
-    .Score{
-        display: flex;
-        justify-content: space-around;
-        margin: 25px;
-        font-family: 'Turret Road', cursive;
-        text-align: center;
-    }
-    button:hover{
-        color: #212121;
-        background: #fca652;
-        transition: all 0.3s ease;
-        cursor: pointer;
-    }
-    button{
-        margin: 2px;
-        border: none;
-        padding: 5px 8px;
-        background: #fca652;
-        outline: none;
-        font-family: 'Turret Road', cursive;
-    }
-    .Btn{
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        }
-        .Phand{
-            width: 150px;
-        }
-        .Chand{
-            width: 150px;
-        }
-}
-@media(max-width: 366px){
-    button{
-        margin: 1px;
-        border: none;
-        padding: 5px 5px;
-        background: #ffd57e;
-        outline: none;
-        font-family: 'Turret Road', cursive;
-    }
-}
-
-
-
-
-
